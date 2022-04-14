@@ -1,4 +1,4 @@
-from Cpf_cnpj import CpfCnpj
+from Cpf_cnpj import Documento
 from validate_docbr import CNPJ
 
 #cpf_um = Cpf("06146174300")
@@ -11,7 +11,7 @@ exemplo_cpf = "06146174300"
 
 #print(cnpj.validate(exemplo_cnpj))
 
-documento = CpfCnpj(exemplo_cpf,'cpf')
+documento = Documento.cria_documento(exemplo_cpf)
 print(documento)
 
 
