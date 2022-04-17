@@ -1,10 +1,10 @@
-from datas_br import DatasBr
-from datetime import datetime, timedelta
+import requests
+from acesso_cep import BuscaEndereco
 
-hoje = DatasBr()
+cep = "64001300"
 
-print(hoje.tempo_cadastro())
+objeto_cep = BuscaEndereco(cep)
+bairro,localidade,uf = objeto_cep.acessa_via_cep()
 
-
-
+print(bairro, localidade, uf)
 
